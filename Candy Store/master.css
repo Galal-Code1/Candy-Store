@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mobile-image {
+  display: none;
+}
+
+:root {
+  --background-home: hsl(20, 50%, 98%);
+  --border-rad: 15px;
+  --red: hsl(14, 86%, 42%);
+}
+
+body {
+  /* Customize The Fonts */
+  font-family: redhat-regular;
+  font-size: 16px;
+  background-color: var(--background-home);
+}
+
+/* Customize The Links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Customize The Images */
+img {
+  width: 100%;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* Customize The Size Of Page */
+
+.container {
+  width: 1300px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: redhat-regular;
+  src: url("./assets/fonts/static/RedHatText-Regular.ttf");
+}
+
+@font-face {
+  font-family: redhat-bold;
+  src: url("./assets/fonts/static/RedHatText-Bold.ttf");
+}
+
+/* Start Home Page Style */
+
+.home-page {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+/* Customize The Size Of Page Between Main and Aside */
+
+main {
+  width: 65%;
+}
+
+aside {
+  background: white;
+  width: 35%;
+  padding: 20px;
+  border-radius: var(--border-rad);
+}
+
+/* Title Style */
+main .title {
+  font-family: redhat-bold;
+  margin-bottom: 20px;
+}
+
+/* The Grid Prodcuts */
+.grid-prodcuts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 30px;
+}
+
+/* Stack Image And Button */
+.prodcuct-card .stack-bto-img {
+  position: relative;
+}
+/* Customize The Image Of Card */
+.prodcuct-card .stack-bto-img > img {
+  border-radius: var(--border-rad);
+}
+
+/* Start Customize The Button */
+.prodcuct-card .stack-bto-img button {
+  display: block;
+  width: 70%;
+  background-color: white;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -19px;
+  outline: none;
+  border: 1px solid hsl(12, 20%, 44%);
+}
+/* Customize Content Of Button */
+.prodcuct-card .stack-bto-img button .add,
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+}
+
+/* Add Mode */
+.prodcuct-card .stack-bto-img button .add {
+  /* display: none; */
+  background: white;
+  padding: 15px 10px;
+  transition: 0.5s ease;
+}
+
+.prodcuct-card .stack-bto-img button .add:hover {
+  color: hsl(14, 86%, 42%);
+}
+.prodcuct-card .stack-bto-img button .add img {
+  margin-right: 10px;
+  width: 20px;
+  padding: 1px;
+}
+
+/* Edit Mode */
+.prodcuct-card .stack-bto-img button .edit {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--red);
+  padding: 15px 10px;
+}
+.prodcuct-card .stack-bto-img button .edit img {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+/* Start Product Inforamtion */
+.product-inforamtion {
+  margin-top: 30px;
+  line-height: 35px;
+}
+
+.product-inforamtion .category {
+  color: hsl(14, 25%, 72%);
+}
+.product-inforamtion .name {
+  color: hsl(14, 65%, 9%);
+}
+.product-inforamtion .price {
+  color: hsl(14, 86%, 42%);
+}
+/* End Product Inforamtion */
+
+/* Start The Cart Section */
+
+/* Style The Title */
+aside .title {
+  color: hsl(14, 86%, 42%);
+  font-family: redhat-bold;
+}
+
+/* The Content Of Cart */
+
+aside section .cart {
+  margin-top: 25px;
+}
+aside section .cart .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid hsl(14, 65%, 9%);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+aside section .cart .item > div {
+  line-height: 30px;
+}
+
+aside section .cart .item > div h3:first-child {
+  color: hsl(14, 65%, 9%);
+  font-weight: 900;
+  font-family: redhat-bold;
+}
+aside section .cart .item > div h3:last-child span:first-child {
+  color: hsl(14, 65%, 9%);
+  font-weight: 900;
+  font-family: redhat-bold;
+  color: hsl(14, 86%, 42%);
+}
+
+/* Customize The Icon */
+aside section .cart .item img {
+  width: 22px;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 0%);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+.order-total h1 {
+  font-weight: 900;
+  font-family: redhat-bold;
+}
+
+/* Start The Banner Carbon */
+.carbon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(13, 31%, 94%);
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.carbon p span {
+  font-family: redhat-bold;
+}
+.carbon img {
+  width: 32px;
+  margin-right: 15px;
+}
+
+/* Start The Confirm */
+
+#confirm-button {
+  background: hsl(14, 86%, 42%);
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+  font-family: redhat-bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Start Empty Cart */
+
+.empty-cart {
+  text-align: center;
+}
+.empty-cart img {
+  width: 50%;
+}
+.empty-cart p {
+  color: hsl(12, 20%, 44%);
+  font-family: redhat-bold;
+}
+
+/* Start Confirm Order */
+
+.confirm-order {
+  background: rgba(0, 0, 0, 50%);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-order {
+  width: 500px;
+  background: white;
+  border-radius: var(--border-rad);
+  padding: 30px 20px;
+}
+
+.box-order img:first-child {
+  width: 64px;
+}
+
+.box-order h1 {
+  font-size: 2em;
+  font-family: redhat-bold;
+  margin-top: 15px;
+}
+.box-order p {
+  color: hsl(12, 20%, 44%);
+  margin-top: 5px;
+}
+.box-order > section {
+  background: hsl(13, 31%, 94%);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: var(--border-rad);
+}
+.box-order .products {
+  overflow-y: scroll;
+  height: 300px;
+  padding: 10px;
+}
+
+/* Customize The Scroll Bar */
+.box-order .products::-webkit-scrollbar-thumb {
+  background: hsl(14, 25%, 72%);
+  border-radius: 50px;
+}
+.box-order .products::-webkit-scrollbar {
+  background: none;
+}
+
+.box-order .products > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid hsl(14, 65%, 9%);
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+.box-order .products > div .info {
+  display: flex;
+}
+.box-order .products > div .info img {
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.box-order .products > div .info > div h2 {
+  font-size: 1.2em;
+}
+
+.box-order .products > div .info > div h2 span {
+  color: hsl(14, 86%, 42%);
+  font-family: redhat-bold;
+}
+
+.box-order .products > div .info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* bill total */
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bill-total h2 {
+  font-family: redhat-bold;
+}
+
+/* Submit button */
+.submit {
+  background: hsl(14, 86%, 42%);
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+  font-family: redhat-bold;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* For Mobile Screen */
+@media (max-width: 450px) {
+  .container {
+    width: 375px;
+    margin: auto;
+    padding: 0 10px;
+  }
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 30px 0;
+  }
+  /* Change The Image */
+
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
+
+  body {
+    /* Customize The Fonts */
+    font-family: redhat-regular;
+    font-size: 10px;
+    background-color: var(--background-home);
+  }
+  main {
+    width: 100%;
+  }
+
+  aside {
+    background: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: var(--border-rad);
+  }
+  .grid-prodcuts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+  }
+
+  /* Start Customize The Button */
+  .prodcuct-card .stack-bto-img button {
+    display: block;
+    width: 70%;
+    background-color: white;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    outline: none;
+    border: 1px solid hsl(12, 20%, 44%);
+  }
+
+  /* Customize Content Of Button */
+  .prodcuct-card .stack-bto-img button .add,
+  .edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    font-size: 0.7em;
+  }
+
+  /* Add Mode */
+  .prodcuct-card .stack-bto-img button .add {
+    /* display: none; */
+    background: white;
+    padding: 5px 10px;
+    transition: 0.5s ease;
+  }
+
+  .prodcuct-card .stack-bto-img button .add:hover {
+    color: hsl(14, 86%, 42%);
+  }
+  .prodcuct-card .stack-bto-img button .add img {
+    margin-right: 10px;
+    width: 20px;
+    padding: 1px;
+  }
+
+  /* Edit Mode */
+  .prodcuct-card .stack-bto-img button .edit {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--red);
+    padding: 15px 10px;
+  }
+  .prodcuct-card .stack-bto-img button .edit img {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 1px;
+    border-radius: 50%;
+  }
+  /* Start Product Inforamtion */
+  .product-inforamtion {
+    margin-top: 20px;
+    line-height: 25px;
+  }
+}
+
+/* For Tablet Screen */
+@media (min-width: 451px) and (max-width: 1000px) {
+  .container {
+    width: 550px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  body {
+    /* Customize The Fonts */
+    font-family: redhat-regular;
+    font-size: 10px;
+    background-color: var(--background-home);
+  }
+  main {
+    width: 60%;
+  }
+
+  aside {
+    background: white;
+    width: 40%;
+    padding: 20px;
+    border-radius: var(--border-rad);
+  }
+  /* The Grid Prodcuts */
+  .grid-prodcuts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 10px;
+  }
+  /* Start Customize The Button */
+  .prodcuct-card .stack-bto-img button {
+    display: block;
+    width: 70%;
+    background-color: white;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    outline: none;
+    border: 1px solid hsl(12, 20%, 44%);
+  }
+
+  /* Customize Content Of Button */
+  .prodcuct-card .stack-bto-img button .add,
+  .edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    font-size: 0.7em;
+  }
+
+  /* Add Mode */
+  .prodcuct-card .stack-bto-img button .add {
+    /* display: none; */
+    background: white;
+    padding: 5px 10px;
+    transition: 0.5s ease;
+  }
+
+  .prodcuct-card .stack-bto-img button .add:hover {
+    color: hsl(14, 86%, 42%);
+  }
+  .prodcuct-card .stack-bto-img button .add img {
+    margin-right: 10px;
+    width: 20px;
+    padding: 1px;
+  }
+
+  /* Edit Mode */
+  .prodcuct-card .stack-bto-img button .edit {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--red);
+    padding: 15px 10px;
+  }
+  .prodcuct-card .stack-bto-img button .edit img {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 1px;
+    border-radius: 50%;
+  }
+  /* Start Product Inforamtion */
+  .product-inforamtion {
+    margin-top: 20px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candy Store</title>
+    <link rel="stylesheet" href="master.css" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/images/icon-add-to-cart.svg" />
+  </head>
+  <body>
+    <div class="home-page container">
+      <main>
+        <!-- Start Title -->
+        <div class="title">
+          <h1>Desserts</h1>
+        </div>
+        <!-- End Title -->
+
+        <!-- Start The Grid Prodcuts -->
+        <section class="grid-prodcuts"></section>
+        <!-- End The Grid Prodcuts -->
+      </main>
+      <aside>
+        <!-- title -->
+        <h2 class="title">Your Cart (0)</h2>
+
+        <!-- Start Cotnent Of Cart -->
+        <section>
+          <!-- Start The Cart -->
+          <section class="cart">
+            <div class="item">
+              <div>
+                <h3>Classic</h3>
+                <h3><span>1x</span> @ <span>$5.50</span> <span>$5.50</span></h3>
+              </div>
+              <img
+                class="remove-icon"
+                src="./assets/images/icon-remove-item.svg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <div>
+                <h3>Classic</h3>
+                <h3><span>1x</span> @ <span>$5.50</span> <span>$5.50</span></h3>
+              </div>
+              <img
+                class="remove-icon"
+                src="./assets/images/icon-remove-item.svg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <div>
+                <h3>Classic</h3>
+                <h3><span>1x</span> @ <span>$5.50</span> <span>$5.50</span></h3>
+              </div>
+              <img
+                class="remove-icon"
+                src="./assets/images/icon-remove-item.svg"
+                alt=""
+              />
+            </div>
+          </section>
+          <!-- End The Cart -->
+
+          <!-- Start The Order Total -->
+          <section class="order-total">
+            <p>Order Total</p>
+            <h1 id="order-total">$5.0</h1>
+          </section>
+          <!-- End The Order Total -->
+
+          <!-- Start The Carbon Neutral -->
+          <div class="carbon">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <p>This is a <span>carbon-neutral</span> delivery</p>
+          </div>
+          <!-- End The Carbon Neutral -->
+
+          <!-- Start Confirm Button -->
+          <button id="confirm-button">Confirm Order</button>
+          <!-- End Confirm Button -->
+        </section>
+        <!-- Start Cotnent Of Cart -->
+
+        <!-- Empty Cart -->
+        <div class="empty-cart hide">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="" />
+          <p>Your added items will appear here</p>
+        </div>
+      </aside>
+    </div>
+    <!-- Start The Confirm Order Section -->
+    <section class="confirm-order">
+      <div class="box-order">
+        <!-- Icon Succesful -->
+        <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+        <!-- Start Title -->
+        <h1>Order Confirmed</h1>
+        <p>We hope you enjoyed Your Food!</p>
+        <!-- End Title -->
+
+        <section>
+          <!-- Start Products In Bill -->
+          <section class="products">
+            <!-- Start Items -->
+            <div>
+              <div class="info">
+                <img src="./assets/images/image-cake-thumbnail.jpg" alt="" />
+                <!-- Start Info -->
+                <div>
+                  <h2>Classic</h2>
+                  <h2><span>1x</span> @ $5.0</h2>
+                </div>
+                <!-- End Info -->
+              </div>
+              <h2 class="price">$50</h2>
+            </div>
+            <div>
+              <div class="info">
+                <img src="./assets/images/image-cake-thumbnail.jpg" alt="" />
+                <!-- Start Info -->
+                <div>
+                  <h2>Classic</h2>
+                  <h2><span>1x</span> @ $5.0</h2>
+                </div>
+                <!-- End Info -->
+              </div>
+              <h2 class="price">$50</h2>
+            </div>
+            <div>
+              <div class="info">
+                <img src="./assets/images/image-cake-thumbnail.jpg" alt="" />
+                <!-- Start Info -->
+                <div>
+                  <h2>Classic</h2>
+                  <h2><span>1x</span> @ $5.0</h2>
+                </div>
+                <!-- End Info -->
+              </div>
+              <h2 class="price">$50</h2>
+            </div>
+            <div>
+              <div class="info">
+                <img src="./assets/images/image-cake-thumbnail.jpg" alt="" />
+                <!-- Start Info -->
+                <div>
+                  <h2>Classic</h2>
+                  <h2><span>1x</span> @ $5.0</h2>
+                </div>
+                <!-- End Info -->
+              </div>
+              <h2 class="price">$50</h2>
+            </div>
+            <div>
+              <div class="info">
+                <img src="./assets/images/image-cake-thumbnail.jpg" alt="" />
+                <!-- Start Info -->
+                <div>
+                  <h2>Classic</h2>
+                  <h2><span>1x</span> @ $5.0</h2>
+                </div>
+                <!-- End Info -->
+              </div>
+              <h2 class="price">$50</h2>
+            </div>
+            <!-- End Items -->
+          </section>
+          <!-- End Products In Bill -->
+
+          <!-- total -->
+          <div class="bill-total">
+            <p>order totial</p>
+            <h2>$50</h2>
+          </div>
+        </section>
+        <button class="submit" id="submit">Start New Order</button>
+      </div>
+      <!-- End Box Order -->
+    </section>
+    <!-- End The Confirm Order Section -->
+    <script src="app.js"></script>
+  </body>
+</html>
